@@ -8,13 +8,14 @@
 } 
     /* aboutMe */
 .AboutMeBackground {
-    /* position: relative; */
-    min-height: 100vh;
+    position: relative;
+    height: 54vw;
     background-color: #0001fc;
     color: #fff;
     opacity: 0.9;
-    filter: brightness(80%);
+    /* filter: brightness(80%); */
     width: 100%;
+
 } 
 .textBackground {
     background-color: #bec2c7;
@@ -55,34 +56,35 @@
 }
     /* aboutMe */
 .AboutMeImg {
-    position: fixed;
+    position: absolute;
     right: 0;
     bottom: 0;
 }
 .AboutMeImg img {
-    width: 30vw;
+    width: 10vw;
     max-width: 200px;
     height: auto;
 }
 .displayImg img{
+    min-width: 200px;
     width: 25vw;
     max-width: 2000px;
 
-    height: auto;
-    max-height: 1000px;
+    /* height: auto;
+    max-height: 1000px; */
 }
 .photo1 {
-    position: fixed;
+    position: absolute;
     left: 2vw;
     bottom: 3.5vw;
 }
 .photo2 {
-    position: fixed;
+    position: absolute;
     left: 4vw;
     bottom: 22vw;
 }
 .photo3 {
-    position: fixed;
+    position: absolute;
     right: 1.5vw;
     top: 5vw;
 }
@@ -114,6 +116,9 @@
 h1 {
     font-size: clamp(2rem, 3vw, 8rem);
     /* gap: clamp(4px, 1vw, 12px); */
+}
+h4 {
+    font-size: clamp(0.8rem, 0.9vw, 1.4rem);
 }
 h3 {
     font-size: clamp(1rem, 1.38vw, 4rem);
@@ -164,32 +169,32 @@ h3 {
   font-size: 2em;
 }
 .text1 {
-    position: fixed;
-    right: 1.5vw;
-    bottom: 10vw;
+    position: absolute;
+    right: 2vw;
+    bottom: 11vw;
 }
 
 .text2 {
-    position: fixed;
+    position: absolute;
     left: 18vw;
-    bottom: 1vw;
+    bottom: 0.6vw;
 }
 
 .text3 {
-    position: fixed;
+    position: absolute;
     left: 5vw;
-    top: 8vw;
+    top: 9vw;
 }
 
 .text4 {
-    position: fixed;
+    position: absolute;
     right: 12vw;
-    bottom: 7vw;
+    bottom: 8vw;
 }
 
 .text5 {
-    position: fixed;
-    left: 60vw;
+    position: absolute;
+    left: 58vw;
     top: 5vw;
 }
 
@@ -197,9 +202,9 @@ h3 {
 /* box */
     /*aboutMe*/
 .textBox {
-    width: 80%;
-    max-width: 950px;
-    min-height: 300px;
+    width: 38vw;
+    max-width: 900px;
+    min-width: 300px;
 
     margin: 0 auto;
 
@@ -209,14 +214,14 @@ h3 {
 
     border-radius: 30px;
 
-    padding: 30px;
+    padding: 10px;
 
-    position: fixed;
-    right: 28vw;
-    top: 7vw;
+    position: absolute;
+    right: 30.5vw;
+    top: 9vw; 
 }
 .imgBox{
-    width: 80%;
+    /* width: 80%; */
     max-width: 100px;
     min-height: 100px;
 
@@ -226,7 +231,7 @@ h3 {
 
     border-radius: 30px;
 
-    padding: 30px;
+    padding: 10px;
 }
     /*photo*/
 .imgBox1{
@@ -247,18 +252,18 @@ nav ul{
     gap: 40px;
 }
 nav a {
+    color: #fee77b;
     font-size: clamp(0.5rem, 1.5vw, 2rem);
-    text-decoration: none;
+    text-decoration: none;   
 }
-
-
-
 html, body {
     margin: 0;
     padding: 0;
     width: 100%;
     height: 100%;
 }
+
+
 .img {
     opacity: 0.9;
     display: block;
