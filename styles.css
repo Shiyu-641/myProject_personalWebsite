@@ -2,7 +2,6 @@
     /* index */
 .homeBackground {
     background-color: #fee56d;
-    color: #fff;
     opacity: 0.9;
     width: 100%;
 } 
@@ -11,7 +10,6 @@
     position: relative;
     height: 54vw;
     background-color: #0001fc;
-    color: #fff;
     opacity: 0.9;
     /* filter: brightness(80%); */
     width: 100%;
@@ -19,19 +17,18 @@
 } 
 .textBackground {
     background-color: #bec2c7;
+    text-align: center;
 }   
     /* photo */
 .photoBackground {
     background: url("image/greenPattern.jpeg") repeat,
                 #88cc7e;
-    color: #fff;
     width: 100%;
 }
     /* fantasy */
 .fantasyBackground {
     background: url("image/bluePattern.jpg") repeat,
                       #91dbfd;
-    color: #fff;
     width: 100%;
 }
 .textBackground2 {
@@ -46,6 +43,7 @@
 }
 .homeFont {
     font-family: "Press Start 2P", serif;
+    color: white;
 }
 
 
@@ -117,12 +115,12 @@ h1 {
     font-size: clamp(2rem, 3vw, 8rem);
     /* gap: clamp(4px, 1vw, 12px); */
 }
-h4 {
+#introduction {
     font-size: clamp(0.8rem, 0.9vw, 1.4rem);
 }
 @media screen and (min-width: 1200px)
 {
-    h4 {
+    #introduction {
     font-size: clamp(1rem, 1.3vw, 4rem);
     }
 }   
@@ -203,6 +201,10 @@ h3 {
     left: 58vw;
     top: 5vw;
 }
+/* photo */
+.textCenter {
+    text-align: center;
+}
 
 
 /* box */
@@ -226,7 +228,7 @@ h3 {
     right: 30.5vw;
     top: 9vw; 
 }
-.imgBox{
+.imgBox {
     /* width: 80%; */
     max-width: 100px;
     min-height: 100px;
@@ -240,7 +242,7 @@ h3 {
     padding: 10px;
 }
     /*photo*/
-.imgBox1{
+.imgBox1 {
     margin: 0 auto;
 
     background-color: white;
@@ -249,7 +251,20 @@ h3 {
 
     padding: 30px;
 }
+#imageModal {
+    position: fixed;
+    inset: 0;
+    display: none;
 
+    justify-content: center;
+    align-items: center;
+}
+#largeImage {
+    max-width: 90vw;
+    max-height: 90vh;
+    width: auto;
+    height: auto;
+}
 
 /*others*/
 nav ul{
@@ -262,6 +277,9 @@ nav a {
     font-size: clamp(0.5rem, 1.5vw, 2rem);
     text-decoration: none;   
 }
+a:hover {
+    color: red;
+}
 html, body {
     margin: 0;
     padding: 0;
@@ -269,11 +287,6 @@ html, body {
     height: 100%;
 }
 
-
-.img {
-    opacity: 0.9;
-    display: block;
-}
 
 
 

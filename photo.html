@@ -7,10 +7,29 @@
         <link href="styles.css" rel="stylesheet">
 
         <title>My Photography</title>
+        
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                let photos = document.querySelectorAll(".photo");
+                let modal = document.querySelector("#imageModal");
+                let largeImage = document.querySelector("#largeImage");
+                for(let photo of photos)
+                {
+                    photo.addEventListener("click", function(){
+                        largeImage.src = photo.src;
+                        modal.style.display = "flex";
+                    });
+
+                    modal.addEventListener("click", function(){
+                        modal.style.display = "none";
+                    });
+                } 
+            });          
+        </script>
     </head>
     <body>
         <div class = "homeFont photoBackground">
-            <center><h1>photography</h1></center>
+            <div class = "textCenter"><h1>photography</h1></div>
             <p id = "photo"></p>
             <nav>
                 <ul>
@@ -22,31 +41,36 @@
                 </ul>
             </nav>
             <p>
-                <center><h2>
+                <div class = "textCenter"><h2>
                     I'm glad to have you here. Here are some photos I’ve taken along the way.
                     I hope you enjoy them as much as I enjoyed capturing them.~
-                </h2></center>
+                </h2></div>
             </p>
-            <center>
-            <img src = "image/photo1.jpeg" alt = "a image" class = "longphoto imgBox1"/>
-            <img src = "image/photo5.jpeg" alt = "a image" class = "longphoto imgBox1"/>
-            <hr>
-            <img src = "image/photo6.jpeg" alt = "a image" class = "longphoto imgBox1" loading="lazy"/>
-            <img src = "image/photo11l.jpeg" alt = "a image" class = "longphoto imgBox1" loading="lazy"/>
-            <hr>
-            <img src = "image/photo4.jpeg" alt = "a image" class = "flatphoto imgBox1" loading="lazy"/>
-            <img src = "image/photo2.jpeg" alt = "a image" class = "flatphoto imgBox1" loading="lazy"/>
-            <hr>
-            <img src = "image/photo3.jpeg" alt = "a image" class = "flatphoto imgBox1" loading="lazy"/>
-            <img src = "image/photo7f.jpeg" alt = "a image" class = "flatphoto imgBox1" loading="lazy"/>
-            <hr>
-            <img src = "image/photo8f.jpeg" alt = "a image" class = "flatphoto imgBox1" loading="lazy"/>
-            <img src = "image/photo9f.jpeg" alt = "a image" class = "flatphoto imgBox1" loading="lazy"/>
-            <hr>
-            <img src = "image/photo10f.jpeg" alt = "a image" class = "flatphoto imgBox1" loading="lazy"/>
-            <img src = "image/photo12f.jpeg" alt = "a image" class = "flatphoto imgBox1" loading="lazy"/>
-            </center>
 
+            <center>
+            <img src = "image/photo1.jpeg" alt = "a image" class = "longphoto imgBox1 photo"/>
+            <img src = "image/photo5.jpeg" alt = "a image" class = "longphoto imgBox1 photo"/>
+            <hr>
+            <img src = "image/photo6.jpeg" alt = "a image" class = "longphoto imgBox1 photo" loading="lazy"/>
+            <img src = "image/photo11l.jpeg" alt = "a image" class = "longphoto imgBox1 photo" loading="lazy"/>
+            <hr>
+            <img src = "image/photo4.jpeg" alt = "a image" class = "flatphoto imgBox1 photo" loading="lazy"/>
+            <img src = "image/photo2.jpeg" alt = "a image" class = "flatphoto imgBox1 photo" loading="lazy"/>
+            <hr>
+            <img src = "image/photo3.jpeg" alt = "a image" class = "flatphoto imgBox1 photo" loading="lazy"/>
+            <img src = "image/photo7f.jpeg" alt = "a image" class = "flatphoto imgBox1 photo" loading="lazy"/>
+            <hr>
+            <img src = "image/photo8f.jpeg" alt = "a image" class = "flatphoto imgBox1 photo" loading="lazy"/>
+            <img src = "image/photo9f.jpeg" alt = "a image" class = "flatphoto imgBox1 photo" loading="lazy"/>
+            <hr>
+            <img src = "image/photo10f.jpeg" alt = "a image" class = "flatphoto imgBox1 photo" loading="lazy"/>
+            <img src = "image/photo12f.jpeg" alt = "a image" class = "flatphoto imgBox1 photo" loading="lazy"/>
+            </center>
+            
+            <div id = "imageModal">
+                <img id = "largeImage" src = "" alt = "">
+            </div>
+            
             <hr>
         </div>
     </body>
