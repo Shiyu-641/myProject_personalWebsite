@@ -120,6 +120,12 @@ h1 {
 h4 {
     font-size: clamp(0.8rem, 0.9vw, 1.4rem);
 }
+@media screen and (min-width: 1200px)
+{
+    h4 {
+    font-size: clamp(1rem, 1.3vw, 4rem);
+    }
+}   
 h3 {
     font-size: clamp(1rem, 1.38vw, 4rem);
     /* gap: clamp(4px, 1vw, 12px); */
